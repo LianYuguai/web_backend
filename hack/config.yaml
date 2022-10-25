@@ -1,0 +1,11 @@
+
+# CLI tool, only in development environment.
+# https://goframe.org/pages/viewpage.action?pageId=3673173
+gfcli:
+  gen:
+    dao:
+    - link:            "mysql:root:123456@tcp(192.168.1.207:3306)/dong_dian?loc=Local"
+      tables:          "user,g2g,goldencham,goldencham_data,oer,ooc,pm,seasoning,log"
+      removePrefix:    "dd_"
+      descriptionTag:  true
+      noModelComment:  true
