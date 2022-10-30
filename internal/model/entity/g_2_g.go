@@ -6,9 +6,9 @@ package entity
 
 // G2G is the golang structure for table g2g.
 type G2G struct {
-	Best   string `json:"best"   description:""`
-	Avg    string `json:"avg"    description:""`
-	Ratio  string `json:"ratio"  description:""`
-	Count  string `json:"count"  description:""`
-	Ratio1 string `json:"ratio1" description:""`
+	Best   string  `json:"best"   description:""`
+	Avg    string  `json:"avg"    description:""`
+	Ratio  float64 `json:"ratio"  description:""`
+	Count  string  `json:"count"  description:""`
+	Ratio1 float64 `json:"ratio1" description:""`
 }

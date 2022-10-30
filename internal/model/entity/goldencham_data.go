@@ -6,8 +6,8 @@ package entity
 
 // GoldenchamData is the golang structure for table goldencham_data.
 type GoldenchamData struct {
-	ToolChamber string `json:"toolChamber" description:""`
-	Tool        string `json:"tool"        description:""`
-	Cham        string `json:"cham"        description:""`
-	MatchRatio  string `json:"matchRatio"  description:""`
+	ToolChamber string  `json:"toolChamber" description:""`
+	Tool        string  `json:"tool"        description:""`
+	Cham        string  `json:"cham"        description:""`
+	MatchRatio  float64 `json:"matchRatio"  description:""`
 }
