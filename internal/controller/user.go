@@ -46,7 +46,7 @@ func (c *cUser) SignIn(ctx context.Context, req *v1.UserSignInReq) (res *v1.User
 	return
 }
 
-func (c *cHello) GetUserList(ctx context.Context, req *v1.UserListReq) (res *v1.UserListRes, err error) {
+func (c *cUser) GetUserList(ctx context.Context, req *v1.UserListReq) (res *v1.UserListRes, err error) {
 	var userList, _ = service.User().GetUserList(ctx)
 	var listData []byte
 	listData, err = json.Marshal(&userList)

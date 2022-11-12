@@ -20,5 +20,20 @@ database:
     link:   "mysql:root:123456@tcp(192.168.1.207:3306)/dong_dian?loc=Local"
     debug:  true
 
+# Redis 配置示例
+redis:
+  # 单实例配置示例1
+  default:
+    address: 192.168.1.207:6379
+    db:      0
+    pass:        123456
+
+  # 单实例配置示例2
+  # cache:
+  #   address:     127.0.0.1:6379
+  #   db:          1
+  #   pass:        123456
+  #   idleTimeout: 600
+
 
 

@@ -2,6 +2,7 @@ package user
 
 import (
 	"context"
+	"encoding/json"
 	"errors"
 	"fmt"
 	"time"
@@ -66,6 +67,8 @@ func (s *sUser) Create(ctx context.Context, in model.UserCreateInput) (err error
 // IsSignedIn checks and returns whether current user is already signed-in.
 func (s *sUser) IsSignedIn(ctx context.Context) bool {
 	if v := service.BizCtx().Get(ctx); v != nil && v.User != nil {
+		user, _ := json.Marshal(v.User)
+		fmt.Println("IsSignedIn: ", user)
 		return true
 	}
 	return false
